@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Crowe.Enterprise.Business.Contract\Crowe.Enterprise.Business.Contract.csproj" />
+    <ProjectReference Include="..\Crowe.Enterprise.Business\Crowe.Enterprise.Business.csproj" />
+    <ProjectReference Include="..\Crowe.Enterprise.Repository.Contract\Crowe.Enterprise.Repository.Contract.csproj" />
+    <ProjectReference Include="..\Crowe.Enterprise.Repository\Crowe.Enterprise.Repository.csproj" />
+    <ProjectReference Include="..\Crowe.Infrastructure.UnitOfWork.EntityFramework\Crowe.Infrastructure.UnitOfWork.EntityFramework.csproj" />
+    <ProjectReference Include="..\Crowe.Infrastructure.UnitOfWork\Crowe.Infrastructure.UnitOfWork.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -13,7 +13,7 @@ namespace Crowe.Demo.Client
         {
             var client = new HttpClient();
 
-            var disco = await client.GetDiscoveryDocumentAsync("http://localhost:5000");
+            var disco = await client.GetDiscoveryDocumentAsync("http://localhost:6622");
  
             // request token
             var tokenResponse = await client.RequestClientCredentialsTokenAsync(new ClientCredentialsTokenRequest
@@ -34,7 +34,7 @@ namespace Crowe.Demo.Client
             var apiClient = new HttpClient();
             apiClient.SetBearerToken(accessToken.Token);
 
-            var response = await apiClient.GetAsync("http://localhost:16738/api/values");
+            var response = await apiClient.GetAsync("http://localhost:16738/api/HelloWorld");
           
             return response;
         }

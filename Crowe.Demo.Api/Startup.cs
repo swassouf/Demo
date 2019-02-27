@@ -9,6 +9,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using Crowe.Ioc;
 
 namespace Crowe.Demo.Api
 {
@@ -28,10 +29,12 @@ namespace Crowe.Demo.Api
                 .AddAuthorization()
                 .AddJsonFormatters();
 
+            services.AddCroweService();
+
             services.AddAuthentication("Bearer")
                 .AddJwtBearer("Bearer", options =>
                 {
-                    options.Authority = "http://localhost:5000";
+                    options.Authority = "http://localhost:6622";
                     options.RequireHttpsMetadata = false;
 
                     options.Audience = "api1";

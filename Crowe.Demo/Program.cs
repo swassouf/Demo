@@ -8,20 +8,16 @@ namespace Crowe.Demo
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            ClientManager client = new ClientManager();
              
-            Task.Run(async () =>  await client.GetHelloWorld());
+            ClientManager client = new ClientManager();
+
+            var helloWorld = client.GetHelloWorld();
+            Task.WaitAll(helloWorld);
+            Console.WriteLine(helloWorld.Result);
 
             Console.ReadKey();
         }
 
-        private async Task<string> GetHelloWorld()
-        {
-            Crowe.Demo.Client.Client client = new Client.Client();
-            var result = await client.GetRequestAsync<HttpResponseMessage>();
-
-            return result.Content.ToString();
-        }
+       
     }
 }

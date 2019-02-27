@@ -6,20 +6,28 @@ using System.Threading.Tasks;
 
 namespace Crowe.Demo
 {
-    internal class ClientManager
+    /// <summary>
+    /// Manage http request using Crowe Demo Client 
+    /// </summary>
+    public class ClientManager
     {
-        Crowe.Demo.Client.Client _CLient; 
-        internal ClientManager()
+        Crowe.Demo.Client.Client _CLient;
+        public ClientManager()
         {
             _CLient = new Client.Client();
         }
 
-        public async Task GetHelloWorld()
+        /// <summary>
+        /// Get Hello World
+        /// </summary>
+        /// <returns>String Hello World</returns>
+        public async Task<string> GetHelloWorld()
         {
             var response = await _CLient.GetRequestAsync<HttpResponseMessage>();
 
             var result = await response.Content.ReadAsStringAsync();
 
+            return result;
         }
     }
 }
