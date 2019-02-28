@@ -18,8 +18,6 @@ namespace Crowe.Ioc
             services.AddTransient<IRepositoryFactory, RepositoryFactory>();
             services.AddTransient<IRepositoryContext<DbContext>, RepositoryContext>();
             services.AddTransient<IRepositoryContextProvider<DbContext>, RepositoryContextProvider>();
-            services.AddTransient<IScoringSummaryRepository, ScoringSummaryRepository>();
-            services.AddTransient<IScoringSummaryService, ScoringSummaryService>();
             services.AddTransient<IHelloWorldRepository, HelloWorldRepository>();
             services.AddTransient<IHelloWorldService, HelloWorldService>();
             return services;

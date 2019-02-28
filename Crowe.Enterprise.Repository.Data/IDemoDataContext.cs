@@ -8,10 +8,8 @@ using System.Threading.Tasks;
 
 namespace Crowe.Enterprise.Repository.Data
 {
-    public interface IScoringViewerDataContext
+    public interface IDemoDataContext
     {
-        DbSet<ScoreSummary> ScoreSummary { get; set; }
-        DbSet<Config> Config { get; set; }
-        DbSet<Location> Location { get; set; }
+
     }
 }

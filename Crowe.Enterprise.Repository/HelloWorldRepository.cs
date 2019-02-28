@@ -12,11 +12,14 @@ namespace Crowe.Enterprise.Repository
 {
     public class HelloWorldRepository : BaseRepository, IHelloWorldRepository
     {
-        IScoringViewerDataContext _ScoringViewerDataContext;
+        /// <summary>
+        /// This is for future database 
+        /// </summary>
+        IDemoDataContext _DemoDataContext;
 
         public HelloWorldRepository(IRepositoryContextProvider<DbContext> repositoryContextProvider) : base(repositoryContextProvider)
         {
-            _ScoringViewerDataContext = repositoryContextProvider.GetRepositoryContext<IScoringViewerDataContext>(ContextTypes.Scoring.ToString()).RepoContext as IScoringViewerDataContext;
+            _DemoDataContext = repositoryContextProvider.GetRepositoryContext<IDemoDataContext>(ContextTypes.Scoring.ToString()).RepoContext as IDemoDataContext;
 
         }
 
