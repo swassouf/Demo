@@ -39,7 +39,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Console", "Console", "{E328
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTest", "UnitTest", "{6B293E44-89D7-4ECF-9896-374E220A9AEF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crowe.Enterprise.Business.IntegrationTest", "Crowe.Enterprise.Business.IntegrationTest\Crowe.Enterprise.Business.IntegrationTest.csproj", "{B86AC545-369D-4193-977A-0CE449863C04}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Crowe.Enterprise.Business.IntegrationTest", "Crowe.Enterprise.Business.IntegrationTest\Crowe.Enterprise.Business.IntegrationTest.csproj", "{B86AC545-369D-4193-977A-0CE449863C04}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{73D785E7-41A6-46A5-A3CA-424D39377590}"
+	ProjectSection(SolutionItems) = preProject
+		ReadMe.md = ReadMe.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
