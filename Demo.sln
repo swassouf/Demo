@@ -37,6 +37,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Crowe.Ioc", "Crowe.Ioc\Crow
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Console", "Console", "{E32877D4-1AA6-4BD5-96EC-F560D9B27074}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTest", "UnitTest", "{6B293E44-89D7-4ECF-9896-374E220A9AEF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crowe.Enterprise.Business.IntegrationTest", "Crowe.Enterprise.Business.IntegrationTest\Crowe.Enterprise.Business.IntegrationTest.csproj", "{B86AC545-369D-4193-977A-0CE449863C04}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -95,6 +99,10 @@ Global
 		{C0274885-5749-4300-92F1-78291D2F31BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C0274885-5749-4300-92F1-78291D2F31BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C0274885-5749-4300-92F1-78291D2F31BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B86AC545-369D-4193-977A-0CE449863C04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B86AC545-369D-4193-977A-0CE449863C04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B86AC545-369D-4193-977A-0CE449863C04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B86AC545-369D-4193-977A-0CE449863C04}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -109,7 +117,7 @@ Global
 		{CAE3EA59-A38F-4F8B-B813-9D08986D6152} = {5CBB5647-CACE-4BD3-A467-F9FFFFA30034}
 		{7140837D-7E4F-4B3F-A960-F497C4358ACA} = {5CBB5647-CACE-4BD3-A467-F9FFFFA30034}
 		{7BDD719A-865E-4A93-9EE7-18E8F14380EE} = {5CBB5647-CACE-4BD3-A467-F9FFFFA30034}
-		{AC5E4183-B8C6-47F4-B0C2-D77C913E800C} = {5CBB5647-CACE-4BD3-A467-F9FFFFA30034}
+		{B86AC545-369D-4193-977A-0CE449863C04} = {6B293E44-89D7-4ECF-9896-374E220A9AEF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EB73B596-9234-46C4-A666-389131A22114}
